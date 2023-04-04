@@ -14,6 +14,7 @@ searchBtn.addEventListener("click", () => {
     .then((data) => {
       result.innerHTML = `
         <img src="${data[0].flags.svg}" class="flag-img">
+        ${console.log(data[0].flags.alt)}
         <h2>${data[0].name.common}</h2>
       `;
     })
